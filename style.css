@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+#about {
+    text-align: center; /* タイトルを中心に */
+    margin-bottom: 20px; /* セクションの下の余白を設定 */
+}
+
+.about-container {
+    display: flex; /* フレックスボックスを有効にする */
+    flex-direction: column; /* 要素を縦に並べる */
+    align-items: center; /* 要素を中央揃えに */
+    margin-top: 20px; /* コンテナの上の余白を設定 */
+}
+
+#about .about-container p {
+    max-width: 600px; /* テキストの最大幅を600pxに設定 */
+    word-wrap: break-word; /* 長い単語も折り返して全文を表示 */
+    margin: 0 auto; /* 中央揃え */
+    text-align: left; /* テキストは左揃え */
+}
+
+
+.profile-pic {
+    width: 150px; /* 画像の幅を設定 */
+    height: 150px; /* 画像の高さを設定 */
+    border-radius: 50%; /* 画像を円形にする */
+    object-fit: cover; /* 画像の比率を保ちつつ、設定した高さ・幅に収める */
+    margin-bottom: 20px; /* 画像とテキストの間に余白を設定 */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333; /* アイコンの色 */
+    font-size: 24px; /* アイコンのサイズ */
+}
+
+.social-links a:hover, .social-links a:focus {
+    color: #555; /* ホバー時のアイコンの色 */
+}
+
+/* 各ソーシャルメディアプラットフォームの固有の色設定 */
+.social-links .twitter {
+    color: #1DA1F2;
+}
+
+.social-links .twitter:hover, .social-links .twitter:focus {
+    color: #0d95e8;
+}
+
+.social-links .instagram {
+    color: #C13584;
+}
+
+.social-links .instagram:hover, .social-links .instagram:focus {
+    color: #a62d6e;
+}
+
+.social-links .youtube {
+    color: #FF0000;
+}
+
+.social-links .youtube:hover, .social-links .youtube:focus {
+    color: #cc0000;
+}
+
+#careers h2 {
+    text-align: center; /* 見出しを中央揃えにする */
+    margin-bottom: 30px; /* 見出しとカードの間に余白を設定 */
+}
+
+#careers {
+    width: 80%; /* または任意のパーセンテージ、またはピクセル単位の幅 */
+    margin: 0 auto; /* 上下のマージンは0、左右のマージンは自動で均等に */
+    max-width: 1200px; /* 必要に応じて最大幅を設定 */
+    padding: 20px; /* コンテンツ周りの余白（オプション） */
+}
+
+.career-image {
+    width: 100%; /* パネルの幅に合わせて画像を拡大/縮小 */
+    height: auto; /* 画像の縦横比を維持 */
+    margin-bottom: 10px; /* 画像とタイトルの間の余白 */
+}
+
+
+.careers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 左揃え、または 'center' にして中央揃えも可能 */
+    align-items: flex-start;
+}
+
+.career {
+    margin: 10px; /* 余白を設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* 大きな画面ではカードを3つ並べる */
+@media (min-width: 1200px) {
+    .career {
+        flex-basis: calc(26% - 22px); /* 余白を考慮して幅を計算 */
+        max-width: calc(26% - 22px);
+    }
+}
+
+/* 中くらいの画面ではカードを2つ並べる */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .career {
+        flex-basis: calc(40% - 20px); /* 余白を考慮して幅を計算 */
+        max-width: calc(40% - 20px);
+    }
+}
+
+/* 小さい画面ではカードを1つだけ表示 */
+@media (max-width: 767px) {
+    .career {
+        flex-basis: 100%; /* カードを縦に並べる */
+        max-width: 100%;
+    }
+}
+
+
+.career h3 {
+    color: #000; /* タイトルの色 */
+    margin-bottom: 5px; /* タイトル下の余白 */
+}
+
+.career p {
+    color: #333; /* テキストの色 */
+    font-size: 14px; /* フォントサイズ */
+}
+
+.career a {
+    color: #1565c0; /* リンクの色 */
+    text-decoration: none; /* 下線を消す */
+    font-weight: bold; /* フォントを太く */
+}
+
+.career a:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+#gallery {
+    text-align: center;
+    margin: 20px auto; /* 上下に20px、左右は自動で余白を設定 */
+    padding: 0 10%; /* 左右に20pxのパディングを追加 */
+    max-width: calc(100% - 40px); /* 画面幅から左右のパディングを引いた幅を最大幅とする */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: calc(25% - 10px); /* 5つの画像を横に並べる */
+    height: auto; /* 画像の縦横比を保持 */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* レスポンシブデザインのメディアクエリ */
+@media (max-width: 800px) {
+    .gallery-image {
+        width: calc(50% - 10px); /* 画面が小さい場合は2列に */
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery-image {
+        width: calc(100% - 10px); /* 画面がさらに小さい場合は1列に */
+    }
+}
+
+
+
+
+

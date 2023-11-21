@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artwork {
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px); /* 3つのイラストを1行に並べる */
+    box-sizing: border-box;
+}
+
+.artwork img {
+    width: 100%; /* コンテナに合わせてサイズ調整 */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* レスポンシブデザイン：画面幅が小さい場合のスタイル */
+@media (max-width: 600px) {
+    .artwork {
+        flex-basis: calc(50% - 20px); /* 2つのイラストを1行に並べる */
+    }
+}
