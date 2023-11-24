@@ -3,29 +3,20 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f0f0f0; /* 背景色を軽く変更 */
 }
 
-header {
-    background-color: #f2f2f2;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+#home {
     text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+#home h1 {
+    margin: 0;
+    padding: 10px;
+    color: #444;
 }
 
 #gallery {
@@ -33,6 +24,7 @@ nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    background-color: #fff;
 }
 
 .artwork {
@@ -42,11 +34,19 @@ nav ul li a {
 }
 
 .artwork img {
-    width: 100%; /* コンテナに合わせてサイズ調整 */
+    width: 100%;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
+    background-color: black; /* イラストの背景を黒に設定 */
+}
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
 }
 
 footer {
@@ -58,7 +58,6 @@ footer {
     width: 100%;
 }
 
-/* レスポンシブデザイン：画面幅が小さい場合のスタイル */
 @media (max-width: 600px) {
     .artwork {
         flex-basis: calc(50% - 20px); /* 2つのイラストを1行に並べる */
